@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бесплатный вебинар · 29 июня — Меньше времени на задачи с помощью вайб-кодинга</title>
+  <meta name="description" content="Бесплатный вебинар 29 июня в 19:00 МСК: как тратить меньше времени на бытовые и рабочие задачи с помощью вайб-кодинга — без программистов и кода.">
+  <link rel="canonical" href="https://vibecoding.neiroguru.ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vibecoding.neiroguru.ru/">
+  <meta property="og:title" content="Бесплатный вебинар · 29 июня — Меньше времени на задачи с помощью вайб-кодинга">
+  <meta property="og:description" content="Покажем, как использовать вайб-кодинг в жизни, семье и работе — без программистов. 29 июня, 19:00 МСК.">
+  <meta property="og:image" content="https://vibecoding.neiroguru.ru/assets/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://vibecoding.neiroguru.ru/assets/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Ксения Баранова · Школа нейросетей">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="image_src" href="https://vibecoding.neiroguru.ru/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Бесплатный вебинар · 29 июня — Меньше времени на задачи с помощью вайб-кодинга">
+  <meta name="twitter:description" content="Покажем, как использовать вайб-кодинг в жизни, семье и работе — без программистов. 29 июня, 19:00 МСК.">
+  <meta name="twitter:image" content="https://vibecoding.neiroguru.ru/assets/og-image.jpg">
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109961574', 'ym');
+      ym(109961574, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109961574" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/space-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts-v6.css">
+  <link rel="preload" as="image" href="assets/hero-veo-poster.png" fetchpriority="high">
+  <script>
+    (function () {
+      var KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+      var q = new URLSearchParams(location.search);
+      var hit = false;
+      KEYS.forEach(function (k) {
+        var v = q.get(k);
+        if (v) { try { sessionStorage.setItem('utm_' + k, v); } catch (e) {} hit = true; }
+      });
+      if (!hit) {
+        KEYS.forEach(function (k) {
+          var v = q.get(k);
+          if (!v) { try { v = sessionStorage.getItem('utm_' + k); } catch (e) {} }
+          if (v) q.set(k, v);
+        });
+      }
+      window.__utmParams = function () {
+        var p = new URLSearchParams();
+        KEYS.forEach(function (k) {
+          var v;
+          try { v = sessionStorage.getItem('utm_' + k); } catch (e) {}
+          if (!v) v = new URLSearchParams(location.search).get(k);
+          if (v) p.set(k, v);
+        });
+        return p;
+      };
+      window.__withUtm = function (url) {
+        if (!url || url.charAt(0) === '#') return url;
+        try {
+          var u = new URL(url, location.href);
+          window.__utmParams().forEach(function (v, k) {
+            if (!u.searchParams.has(k)) u.searchParams.set(k, v);
+          });
+          return u.toString();
+        } catch (e) { return url; }
+      };
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    :root{
+      --bg:#07070F;
+      --bg-2:#0C0D1A;
+      --panel:#11132A;
+      --panel-2:#161A38;
+      --ink:#EAEEFF;
+      --ink-soft:#AEB4E0;
+      --muted:#6C7099;
+      --cyan:#22E6FF;
+      --cyan-d:#0FB8D6;
+      --mag:#FF2EA6;
+      --mag-d:#D11C84;
+      --violet:#8B6CFF;
+      --lime:#C6FF4D;
+      --line:rgba(120,140,255,.18);
+      --glow-c:0 0 10px rgba(34,230,255,.6), 0 0 24px rgba(34,230,255,.3);
+      --glow-m:0 0 10px rgba(255,46,166,.6), 0 0 24px rgba(255,46,166,.3);
+      --max:1180px;
+    }
+    html{ scroll-behavior:smooth; overflow-x:hidden; }
+    @media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *,*::before,*::after{animation:none!important;transition:none!important} }
+    body{ font-family:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif; font-size:17px; line-height:1.6; color:var(--ink-soft); background:var(--bg); -webkit-font-smoothing:antialiased; overflow-x:hidden; position:relative; }
+    .wrap{ width:min(var(--max),100% - 40px); margin-inline:auto; position:relative; z-index:2; }
+    h1,h2,h3{ font-family:'Unbounded','Onest',system-ui,sans-serif; color:var(--ink); font-weight:700; line-height:1.04; letter-spacing:-.01em; }
+    .hero-copy h1{ text-wrap:wrap; max-width:100%; font-size:clamp(1.75rem,3.6vw,3.35rem); line-height:1.08; overflow-wrap:break-word; }
+    .mono{ font-family:'Space Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace; }
+
+    /* fixed atmosphere: neon glows + perspective grid + scanlines */
+    .atmo{ position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
+    .atmo .glow{ position:absolute; border-radius:50%; filter:blur(120px); opacity:.5; }
+    .atmo .g1{ width:560px; height:560px; background:var(--mag); top:-200px; right:-120px; opacity:.32; }
+    .atmo .g2{ width:600px; height:600px; background:var(--cyan); top:520px; left:-200px; opacity:.26; }
+    .atmo .g3{ width:560px; height:560px; background:var(--violet); bottom:-160px; right:-140px; opacity:.28; }
+    .grid{ position:fixed; left:0; right:0; bottom:0; height:46vh; z-index:0; pointer-events:none;
+      background-image:linear-gradient(rgba(34,230,255,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(34,230,255,.16) 1px, transparent 1px);
+      background-size:46px 46px; transform:perspective(420px) rotateX(62deg); transform-origin:bottom; mask-image:linear-gradient(transparent, #000 70%); -webkit-mask-image:linear-gradient(transparent, #000 70%); }
+    .scan{ position:fixed; inset:0; z-index:60; pointer-events:none; background:repeating-linear-gradient(0deg, rgba(0,0,0,.16) 0 1px, transparent 1px 3px); mix-blend-mode:multiply; opacity:.5; }
+
+    /* labels */
+    .tag{ font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--cyan); display:inline-flex; align-items:center; gap:8px; text-shadow:var(--glow-c); }
+    .tag .rec{ width:8px; height:8px; border-radius:50%; background:var(--mag); box-shadow:var(--glow-m); animation:blink 1.4s steps(1) infinite; }
+    @keyframes blink{ 0%,49%{opacity:1} 50%,100%{opacity:.2} }
+
+    /* buttons */
+    .btn{ display:inline-flex; align-items:center; justify-content:space-between; gap:16px; font-family:'Space Mono',monospace; font-weight:700; font-size:13px; letter-spacing:.05em; text-transform:uppercase; padding:14px 14px 14px 24px; border:1.5px solid var(--cyan); cursor:pointer; text-decoration:none; transition:box-shadow .2s, transform .15s, background .2s, color .2s; color:var(--cyan); background:rgba(34,230,255,.05); }
+    .btn .arr{ width:28px; height:28px; border-radius:50%; display:grid; place-items:center; flex-shrink:0; font-size:14px; border:1.5px solid currentColor; transition:transform .2s; }
+    .btn:hover .arr{ transform:translateX(3px); }
+    .btn:active{ transform:scale(.98); }
+    .btn-cyan{ color:var(--cyan); border-color:var(--cyan); box-shadow:var(--glow-c), inset 0 0 16px rgba(34,230,255,.12); }
+    .btn-cyan:hover{ background:var(--cyan); color:#04121A; }
+    .btn-mag{ color:#fff; background:var(--mag); border-color:var(--mag); box-shadow:var(--glow-m); }
+    .btn-mag .arr{ color:#fff; }
+    .btn-mag:hover{ background:var(--mag-d); border-color:var(--mag-d); }
+    .btn-sm{ padding:10px 10px 10px 18px; font-size:12px; }
+    .btn-sm .arr{ width:24px; height:24px; font-size:12px; }
+
+    /* nav */
+    .nav{ position:sticky; top:0; z-index:40; background:rgba(7,7,15,.78); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+    .nav-in{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 0; }
+    .brand{ display:flex; align-items:center; gap:10px; text-decoration:none; }
+    .brand .lg{ font-family:'Unbounded',sans-serif; font-weight:800; font-size:18px; color:var(--ink); letter-spacing:-.03em; }
+    .brand .lg b{ color:var(--cyan); text-shadow:var(--glow-c); }
+    .brand .rec{ font-family:'Space Mono',monospace; font-size:11px; font-weight:700; color:var(--mag); display:inline-flex; align-items:center; gap:6px; text-shadow:var(--glow-m); }
+    .brand .rec i{ width:7px; height:7px; border-radius:50%; background:var(--mag); box-shadow:var(--glow-m); animation:blink 1.4s steps(1) infinite; }
+    .nav-mid{ font-family:'Space Mono',monospace; font-size:12px; font-weight:700; letter-spacing:.04em; color:var(--ink-soft); text-transform:uppercase; }
+    @media(max-width:780px){ .nav-mid{display:none} }
+
+    /* marquee */
+    .marq{ background:var(--mag); color:#0A0512; overflow:hidden; padding:9px 0; }
+    .marq-track{ display:flex; width:max-content; animation:scroll 24s linear infinite; }
+    @keyframes scroll{ to{ transform:translateX(-50%); } }
+    @media(prefers-reduced-motion:reduce){ .marq-track{ animation:none; } }
+    .marq-track span{ font-family:'Space Mono',monospace; font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:0 20px; white-space:nowrap; }
+    .marq-track span::after{ content:'▍'; margin-left:20px; opacity:.5; }
+
+    /* hero */
+    .hero{ padding:48px 0 72px; }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) min(340px,36vw);
+      grid-template-areas:
+        "tag tag"
+        "copy media"
+        "bottom media";
+      gap:24px 48px;
+      align-items:start;
+    }
+    .hero-tag{ grid-area:tag; margin-bottom:0; line-height:1.45; }
+    .hero-copy{ grid-area:copy; min-width:0; }
+    .hero-bottom{ grid-area:bottom; min-width:0; }
+    .hero-r{ grid-area:media; position:relative; display:flex; justify-content:flex-end; align-items:flex-start; min-width:0; }
+    @media(max-width:920px){
+      .hero{ padding:28px 0 48px; }
+      .hero-grid{
+        grid-template-columns:1fr;
+        grid-template-areas:
+          "tag"
+          "copy"
+          "media"
+          "bottom";
+        gap:18px;
+      }
+      .hero-r{ justify-content:center; }
+      .hero-tag{ font-size:10px; letter-spacing:.08em; }
+      .media-block{ max-width:min(300px, 82vw); max-height:min(440px, 54vh); }
+      .hero-copy h1{ font-size:clamp(1.5rem, 6.4vw, 2.05rem); margin-bottom:16px; }
+      .hero-sub{ margin-bottom:0; max-width:none; font-size:1rem; }
+      .hero-gift{ max-width:100%; margin-bottom:20px; }
+      .hero-trust{ margin-top:20px; font-size:11px; line-height:1.45; }
+    }
+    @media(min-width:921px) and (max-width:1080px){
+      .hero-grid{ grid-template-columns:minmax(0,1fr) min(300px,34vw); gap:24px 32px; }
+      .hero-copy h1{ font-size:clamp(1.65rem,3.2vw,2.85rem); }
+    }
+    h1{ font-weight:800; margin-bottom:24px; }
+    .glitch{ position:relative; display:block; color:var(--ink); }
+    .glitch .neon{ color:var(--cyan); text-shadow:var(--glow-c); }
+    h1 .hollow{
+      color:var(--mag);
+      -webkit-text-stroke:1.4px var(--mag);
+      text-shadow:var(--glow-m), 0 0 32px rgba(255,46,166,.35);
+    }
+    .hero-sub{ font-size:1.1rem; color:var(--ink-soft); max-width:52ch; margin-bottom:30px; line-height:1.55; }
+    .hero-acts{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    .hero-trust{ margin-top:26px; font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.03em; color:var(--muted); text-transform:uppercase; }
+
+    /* hero media — neon frame + video */
+    .media-block{
+      position:relative; flex-shrink:0;
+      width:100%;
+      max-width:340px;
+      aspect-ratio:9/16;
+      height:auto;
+      max-height:min(560px, 72vh);
+      background:linear-gradient(180deg,#0E1030,#070713);
+      border:1.5px solid var(--cyan);
+      box-shadow:var(--glow-c), inset 0 0 40px rgba(34,230,255,.08);
+      overflow:hidden;
+    }
+    .media-block::before{ content:''; position:absolute; inset:0; z-index:3; pointer-events:none; background:repeating-linear-gradient(0deg, transparent 0 2px, rgba(0,0,0,.18) 2px 4px); }
+    .media-block::after{ content:''; position:absolute; inset:0; z-index:2; pointer-events:none; background:linear-gradient(135deg, rgba(34,230,255,.14), transparent 45%, rgba(255,46,166,.16)); mix-blend-mode:screen; }
+    .media-block video{ position:absolute; inset:0; z-index:1; width:100%; height:100%; object-fit:cover; object-position:center top; background:#06060E; }
+    .media-block .hero-photo-fallback{ position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center top; background:#06060E; }
+    .media-block video.is-ready + .hero-photo-fallback{ opacity:0; visibility:hidden; pointer-events:none; transition:opacity .2s ease; }
+    .corner{ position:absolute; z-index:4; width:18px; height:18px; border:2px solid var(--cyan); }
+    .corner.tl{ top:8px; left:8px; border-right:none; border-bottom:none; } .corner.tr{ top:8px; right:8px; border-left:none; border-bottom:none; }
+    .corner.bl{ bottom:8px; left:8px; border-right:none; border-top:none; } .corner.br{ bottom:8px; right:8px; border-left:none; border-top:none; }
+    .media-block .mlabel{ position:absolute; z-index:4; font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--cyan); text-shadow:var(--glow-c); }
+    .media-block .mlabel.tl{ top:16px; left:18px; }
+    .media-block .mlabel.tr{ top:16px; right:18px; color:var(--mag); text-shadow:var(--glow-m); display:inline-flex; align-items:center; gap:6px; }
+    .media-block .mlabel.tr i{ width:7px; height:7px; border-radius:50%; background:var(--mag); box-shadow:var(--glow-m); animation:blink 1.4s steps(1) infinite; }
+    .media-block .cap{ position:absolute; bottom:14px; left:50%; transform:translateX(-50%); z-index:4; max-width:calc(100% - 24px); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-family:'Space Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--ink); background:rgba(7,7,15,.82); border:1px solid var(--line); padding:6px 10px; pointer-events:none; }
+
+    /* sections */
+    section{ padding:74px 0; border-top:1px solid var(--line); }
+    @media(max-width:920px){ section{ padding:52px 0; } }
+    .sec-head{ display:flex; align-items:flex-end; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-bottom:40px; }
+    .sec-head .l{ display:flex; align-items:baseline; gap:14px; }
+    .sec-head .mark{ font-family:'Space Mono',monospace; font-weight:700; font-size:14px; color:var(--cyan); text-shadow:var(--glow-c); }
+    .sec-head h2{ font-size:clamp(1.8rem,4.2vw,2.9rem); font-weight:700; }
+    .sec-head .tail{ font-family:'Space Mono',monospace; font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; max-width:34ch; }
+
+    /* card base */
+    .panel{ background:linear-gradient(180deg,var(--panel),var(--bg-2)); border:1px solid var(--line); }
+
+    .hero-gift{ display:flex; align-items:flex-start; gap:14px; margin-bottom:26px; padding:16px 18px; border:1px solid var(--line); background:rgba(17,19,42,.6); max-width:460px; transition:border-color .2s, box-shadow .2s; text-decoration:none; color:inherit; }
+    .hero-gift:hover{ border-color:var(--cyan); box-shadow:var(--glow-c); }
+    .hero-gift .ic{ width:40px; height:40px; border-radius:10px; display:grid; place-items:center; flex-shrink:0; background:rgba(34,230,255,.08); border:1px solid rgba(34,230,255,.25); font-size:18px; }
+    .hero-gift .lbl{ font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--cyan); display:block; margin-bottom:4px; }
+    .hero-gift .tt{ font-size:14px; color:var(--ink-soft); line-height:1.45; display:block; }
+
+    /* pain 2x2 */
+    .pain-intro{ max-width:720px; margin:-8px 0 28px; }
+    .pain-intro p{ font-size:1.05rem; color:var(--ink-soft); line-height:1.62; margin-bottom:14px; }
+    .pain-intro p:last-child{ margin-bottom:0; }
+    .pain-grid-lead{ font-family:'Unbounded',sans-serif; font-size:1.05rem; font-weight:600; color:var(--ink); margin-bottom:18px; }
+    .pain-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+    @media(max-width:620px){ .pain-grid{ grid-template-columns:1fr; max-width:520px; margin-inline:auto; } }
+    .pain-card{ padding:30px 28px; transition:box-shadow .25s, transform .25s; }
+    .pain-card:hover{ transform:translateY(-4px); box-shadow:var(--glow-c); border-color:var(--cyan); }
+    .pain-card.wide{ grid-column:1 / -1; }
+    .pain-card .n{ font-family:'Space Mono',monospace; font-size:12px; font-weight:700; color:var(--cyan); margin-bottom:14px; }
+    .pain-card p{ font-family:'Unbounded',sans-serif; font-size:1.1rem; color:var(--ink); line-height:1.32; font-weight:500; }
+    .pain-foot{ margin-top:32px; display:grid; grid-template-columns:1fr 1fr; }
+    @media(max-width:620px){ .pain-foot{ grid-template-columns:1fr; } }
+    .pain-foot .was{ padding:26px 30px; color:var(--muted); border:1px solid var(--line); }
+    .pain-foot .now{ padding:26px 30px; background:linear-gradient(120deg,var(--cyan),var(--violet)); color:#04121A; font-family:'Unbounded',sans-serif; font-weight:600; font-size:clamp(1.1rem,2.6vw,1.4rem); display:flex; align-items:center; box-shadow:var(--glow-c); }
+
+    /* audience */
+    .aud-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+    @media(max-width:860px){ .aud-grid{ grid-template-columns:1fr 1fr; } }
+    @media(max-width:540px){ .aud-grid{ grid-template-columns:1fr; } }
+    .aud{ padding:28px 26px; background:var(--bg-2); transition:background .25s; }
+    .aud:hover{ background:var(--panel); }
+    .aud .n{ font-family:'Space Mono',monospace; font-size:13px; font-weight:700; color:var(--mag); text-shadow:var(--glow-m); margin-bottom:12px; }
+    .aud h3{ font-family:'Unbounded',sans-serif; font-size:1.05rem; font-weight:600; margin-bottom:8px; line-height:1.25; }
+    .aud p{ font-size:14px; color:var(--ink-soft); line-height:1.5; }
+    .aud.wide{ grid-column:1 / -1; }
+
+    /* creations */
+    .cre-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    @media(max-width:900px){ .cre-grid{ grid-template-columns:1fr 1fr; } }
+    @media(max-width:600px){ .cre-grid{ grid-template-columns:1fr; } }
+    .cre{ padding:20px; display:flex; flex-direction:column; transition:box-shadow .25s, transform .25s; }
+    .cre:hover{ transform:translateY(-5px); box-shadow:var(--glow-c); border-color:var(--cyan); }
+    .cre .meta{ margin-bottom:16px; }
+    .cre .meta .cat{ font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--cyan); }
+    .cre .meta h3{ font-family:'Unbounded',sans-serif; font-size:1.15rem; font-weight:600; margin-top:5px; }
+    .cre .meta p{ font-size:13px; color:var(--muted); margin-top:5px; line-height:1.5; }
+    .mock{ background:#08091A; border:1px solid var(--line); padding:13px; margin-top:auto; }
+    .mock .bar{ display:flex; align-items:center; gap:6px; margin-bottom:12px; }
+    .mock .bar .d{ width:8px; height:8px; border-radius:50%; background:var(--line); }
+    .mock .bar .d.f{ background:var(--cyan); box-shadow:var(--glow-c); }
+    .mock .bar .ti{ margin-left:6px; font-family:'Space Mono',monospace; font-size:10.5px; font-weight:700; color:var(--ink-soft); text-transform:uppercase; }
+    .chips{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+    .chip{ font-family:'Space Mono',monospace; font-size:10.5px; font-weight:700; color:var(--ink-soft); background:transparent; border:1px solid var(--line); padding:4px 10px; border-radius:100px; text-transform:uppercase; }
+    .chip.on{ background:var(--cyan); color:#04121A; border-color:var(--cyan); box-shadow:var(--glow-c); }
+    .mrow{ display:flex; align-items:center; gap:10px; background:var(--panel); border:1px solid var(--line); padding:9px 12px; margin-bottom:8px; }
+    .mrow:last-child{ margin-bottom:0; }
+    .mrow .ic{ width:26px; height:26px; border-radius:7px; display:grid; place-items:center; font-size:13px; background:#0A0B1E; border:1px solid var(--line); flex-shrink:0; }
+    .mrow .tx{ flex:1; } .mrow .tx .a{ font-size:12px; font-weight:700; color:var(--ink); } .mrow .tx .b{ font-size:10.5px; color:var(--muted); }
+    .mrow .tag{ font-family:'Space Mono',monospace; font-size:9.5px; font-weight:700; color:var(--cyan); }
+    .bub{ max-width:84%; padding:8px 12px; font-size:12px; line-height:1.35; margin-bottom:7px; border:1px solid var(--line); }
+    .bub.q{ background:var(--panel); color:var(--ink-soft); border-bottom-left-radius:3px; }
+    .bub.a{ background:linear-gradient(120deg,var(--mag),var(--violet)); color:#fff; margin-left:auto; border-bottom-right-radius:3px; border-color:transparent; box-shadow:var(--glow-m); }
+    .day{ display:flex; justify-content:space-between; align-items:center; padding:9px 0; border-bottom:1px solid var(--line); }
+    .day:last-child{ border:none; }
+    .day .l{ font-size:12px; font-weight:600; color:var(--ink); }
+    .day .c{ width:18px; height:18px; border-radius:6px; border:1.5px solid var(--line); display:grid; place-items:center; font-size:10px; color:#04121A; }
+    .day.done .c{ background:var(--cyan); border-color:var(--cyan); box-shadow:var(--glow-c); }
+
+    /* host */
+    .host-card{ display:grid; grid-template-columns:.82fr 1.18fr; border:1.5px solid var(--cyan); box-shadow:var(--glow-c); overflow:hidden; }
+    @media(max-width:760px){ .host-card{ grid-template-columns:1fr; } }
+    .host-media{ position:relative; background:linear-gradient(180deg,#0E1030,#070713); min-height:360px; display:flex; align-items:flex-end; justify-content:center; border-right:1.5px solid var(--cyan); overflow:hidden; }
+    @media(max-width:760px){ .host-media{ border-right:none; border-bottom:1.5px solid var(--cyan); } }
+    .host-media::before{ content:''; position:absolute; inset:0; z-index:3; pointer-events:none; background:repeating-linear-gradient(0deg, transparent 0 2px, rgba(0,0,0,.18) 2px 4px); }
+    .host-media::after{ content:''; position:absolute; inset:0; z-index:2; pointer-events:none; background:linear-gradient(135deg, rgba(34,230,255,.12), transparent 45%, rgba(255,46,166,.14)); mix-blend-mode:screen; }
+    .host-media video{ position:relative; z-index:1; height:360px; max-width:100%; object-fit:contain; object-position:bottom center; filter:grayscale(1) contrast(1.18) brightness(1.05); }
+    .host-media img{ position:relative; z-index:1; width:100%; height:100%; min-height:360px; object-fit:cover; object-position:center center; filter:none; }
+    .host-media .mlabel{ position:absolute; z-index:4; top:16px; left:18px; font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--cyan); text-shadow:var(--glow-c); }
+    .host-body{ padding:48px 46px; display:flex; flex-direction:column; justify-content:center; background:var(--bg-2); }
+    @media(max-width:520px){ .host-body{ padding:34px 26px; } }
+    .host-body .tag{ margin-bottom:16px; }
+    .host-body h2{ font-size:clamp(1.6rem,3.4vw,2.4rem); margin-bottom:16px; }
+    .host-body p{ font-size:1.02rem; color:var(--ink-soft); margin-bottom:14px; }
+    .host-body .sign{ font-family:'Unbounded',sans-serif; font-weight:700; font-size:1.2rem; color:var(--cyan); text-shadow:var(--glow-c); margin-top:6px; }
+    .host-award{ display:flex; align-items:flex-start; gap:12px; padding:14px 16px; margin-bottom:18px; border:1px solid var(--mag); background:rgba(255,46,166,.08); box-shadow:var(--glow-m); }
+    .host-award .ic{ font-size:20px; line-height:1; }
+    .host-award .t{ font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--mag); }
+    .host-award .s{ font-size:14px; color:var(--ink); margin-top:4px; font-weight:600; }
+    .host-facts{ list-style:none; margin:0 0 18px; padding:0; display:grid; gap:10px; }
+    .host-facts li{ display:flex; gap:10px; font-size:14px; color:var(--ink-soft); line-height:1.45; }
+    .host-facts .ck{ color:var(--cyan); font-weight:700; flex-shrink:0; }
+    .host-tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .host-tags span{ font-family:'Space Mono',monospace; font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; padding:6px 10px; border:1px solid var(--line); color:var(--ink-soft); }
+
+    /* program */
+    #program{ scroll-margin-top:88px; }
+    .prog{ border:1px solid var(--line); max-width:860px; margin-inline:auto; background:var(--bg-2); }
+    .prog-top{ display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:18px 28px; border-bottom:1px solid var(--line); background:linear-gradient(120deg,var(--panel),var(--bg-2)); }
+    .prog-top .mono{ font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--cyan); text-shadow:var(--glow-c); }
+    .prow{ display:grid; grid-template-columns:64px 1fr; gap:20px; padding:20px 28px; border-bottom:1px solid var(--line); align-items:baseline; }
+    .prow:last-child{ border:none; }
+    .prow .n{ font-family:'Space Mono',monospace; font-size:1.1rem; font-weight:700; color:var(--mag); text-shadow:var(--glow-m); }
+    .prow p{ font-family:'Unbounded',sans-serif; font-weight:500; font-size:1.02rem; color:var(--ink); }
+
+    /* quote */
+    .qband{ text-align:center; }
+    .qband blockquote{ font-family:'Unbounded',sans-serif; font-weight:600; font-size:clamp(1.6rem,4.4vw,2.8rem); color:var(--ink); max-width:20ch; margin:0 auto; line-height:1.18; }
+    .qband blockquote em{ color:var(--cyan); font-style:normal; text-shadow:var(--glow-c); }
+    .qband .src{ font-family:'Space Mono',monospace; margin-top:20px; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
+
+    /* CTA */
+    .cta{ position:relative; text-align:center; }
+    .cta-inner{ border:1.5px solid var(--cyan); box-shadow:var(--glow-c), inset 0 0 60px rgba(34,230,255,.06); background:linear-gradient(160deg,#0B1330,#08091A); padding:72px 40px; }
+    @media(max-width:560px){ .cta-inner{ padding:52px 24px; } }
+    .cta .tag{ justify-content:center; margin-bottom:18px; }
+    .cta h2{ font-size:clamp(2rem,5.4vw,3.6rem); font-weight:800; max-width:18ch; margin:0 auto 16px; }
+    .cta h2 .hollow{ color:var(--mag); -webkit-text-stroke:1.4px var(--mag); -webkit-text-fill-color:transparent; text-shadow:var(--glow-m); }
+    .cta p{ color:var(--ink-soft); font-size:1.08rem; max-width:440px; margin:0 auto 32px; }
+    .cta-meta{ display:flex; justify-content:center; margin-bottom:36px; flex-wrap:wrap; border:1px solid var(--line); width:fit-content; max-width:100%; margin-inline:auto; }
+    @media(max-width:560px){
+      .cta-meta{ flex-direction:column; width:100%; }
+      .cta-meta .m{ border-right:none; border-bottom:1px solid var(--line); width:100%; text-align:center; }
+      .cta-meta .m:last-child{ border-bottom:none; }
+    }
+    .cta-meta .m{ padding:16px 30px; border-right:1px solid var(--line); }
+    .cta-meta .m:last-child{ border-right:none; }
+    .cta-meta .m .big{ font-family:'Unbounded',sans-serif; font-weight:700; font-size:1.4rem; color:var(--cyan); text-shadow:var(--glow-c); }
+    .cta-meta .m .small{ font-family:'Space Mono',monospace; font-size:11px; color:var(--muted); margin-top:4px; text-transform:uppercase; }
+    .cta-gift{ display:flex; align-items:flex-start; gap:14px; max-width:480px; margin:0 auto 12px; padding:16px 18px; border:1px solid var(--line); background:rgba(7,7,15,.5); text-align:left; }
+    .cta-gift .ic{ width:40px; height:40px; border-radius:10px; display:grid; place-items:center; flex-shrink:0; background:rgba(255,46,166,.1); border:1px solid rgba(255,46,166,.3); font-size:18px; }
+    .cta-gift .lbl{ font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--mag); margin-bottom:4px; }
+    .cta-gift .tt{ font-size:14px; color:var(--ink-soft); line-height:1.45; }
+    .cta-gifts-note{ font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); margin-bottom:28px; }
+
+    footer.site-footer{ padding:40px 0 28px; border-top:1px solid var(--line); }
+    .site-footer-top{ display:grid; grid-template-columns:1.2fr 1fr; gap:32px; margin-bottom:28px; }
+    @media(max-width:720px){ .site-footer-top{ grid-template-columns:1fr; } }
+    .site-footer-brand{ font-family:'Unbounded',sans-serif; font-weight:700; font-size:1.1rem; color:var(--ink); margin-bottom:6px; }
+    .site-footer-tag{ font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--cyan); margin-bottom:12px; }
+    .site-footer-desc{ font-size:14px; color:var(--muted); max-width:42ch; line-height:1.55; }
+    .site-footer-col-title{ font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:14px; }
+    .site-footer-cta{ margin-bottom:16px; }
+    .site-footer-cta .btn{ max-width:100%; white-space:normal; text-align:left; line-height:1.35; }
+    .site-footer-links{ display:flex; flex-wrap:wrap; gap:12px 20px; }
+    .site-footer-links a{ font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); text-decoration:none; transition:color .2s; }
+    .site-footer-links a:hover{ color:var(--cyan); }
+    .site-footer-bottom{ padding-top:20px; border-top:1px solid var(--line); font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); text-align:center; }
+
+    .mobile-bar{ display:none; position:fixed; bottom:0; left:0; right:0; padding:12px 16px calc(12px + env(safe-area-inset-bottom)); background:rgba(7,7,15,.92); backdrop-filter:blur(12px); border-top:1px solid var(--cyan); z-index:62; transition:opacity .2s ease; }
+    .mobile-bar .btn{ width:100%; }
+    @media(max-width:780px){ .mobile-bar{display:block} body{padding-bottom:84px} .nav .btn-sm{display:none} }
+
+    /* registration popup */
+    .reg-popup{ position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center; padding:max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); visibility:hidden; pointer-events:none; }
+    .reg-popup.is-open{ visibility:visible; pointer-events:auto; }
+    .reg-popup-backdrop{ position:absolute; inset:0; background:rgba(4,4,12,.72); backdrop-filter:blur(8px); border:0; cursor:pointer; opacity:0; transition:opacity .28s ease; }
+    .reg-popup.is-open .reg-popup-backdrop{ opacity:1; }
+    .reg-popup-panel{ position:relative; z-index:1; width:min(500px, 100%); max-height:min(92dvh, 92vh, 760px); overflow:auto; overscroll-behavior:contain; background:#fff; border-radius:24px; box-shadow:0 28px 90px rgba(0,0,0,.45), var(--glow-c); padding:44px 16px 20px; opacity:0; transform:translateY(14px) scale(.98); transition:opacity .28s ease, transform .32s cubic-bezier(.22,.61,.36,1); }
+    .reg-popup.is-open .reg-popup-panel{ opacity:1; transform:none; }
+    .reg-popup-close{ position:absolute; top:10px; right:10px; z-index:2; width:40px; height:40px; border:0; border-radius:50%; background:rgba(7,7,15,.08); color:#111; font-size:22px; line-height:1; cursor:pointer; display:grid; place-items:center; }
+    .reg-popup-close:hover{ background:rgba(7,7,15,.14); }
+    .reg-popup-widget{ position:relative; overflow:hidden; width:100%; min-height:480px; }
+    .reg-popup-widget iframe{ display:block; width:100%!important; max-width:100%!important; border:0; opacity:0; transition:opacity .25s ease .05s; }
+    .reg-popup-widget.is-ready iframe{ opacity:1; }
+    .reg-popup-loader{ position:absolute; inset:0; z-index:1; display:grid; place-items:center; background:#fff; transition:opacity .2s ease, visibility .2s ease; }
+    .reg-popup-widget.is-ready .reg-popup-loader{ opacity:0; visibility:hidden; pointer-events:none; }
+    .reg-popup-loader::after{ content:''; width:36px; height:36px; border-radius:50%; border:3px solid rgba(34,230,255,.18); border-top-color:var(--cyan); animation:reg-spin .75s linear infinite; }
+    @keyframes reg-spin{ to{ transform:rotate(360deg); } }
+    html.reg-popup-open, body.reg-popup-open{ overflow:hidden!important; overscroll-behavior:none; touch-action:none; }
+    body.reg-popup-open .mobile-bar{ opacity:0; pointer-events:none; }
+    body.reg-popup-open .scan{ opacity:0; }
+    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+    @media(max-width:760px){
+      .reg-popup{ align-items:flex-end; padding:0; }
+      .reg-popup-panel{ width:100%; max-width:none; max-height:min(94dvh, 94vh); border-radius:20px 20px 0 0; padding:12px 12px max(16px, env(safe-area-inset-bottom)); transform:translateY(100%); }
+      .reg-popup.is-open .reg-popup-panel{ transform:none; opacity:1; }
+      .reg-popup-widget{ min-height:min(72dvh, 560px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="atmo"><span class="glow g1"></span><span class="glow g2"></span><span class="glow g3"></span></div>
+  <div class="grid"></div>
+
+  <nav class="nav">
+    <div class="wrap nav-in">
+      <a href="#" class="brand" onclick="return false" aria-label="вайб·вебинар"><span class="lg">вайб<b>·</b>вебинар</span><span class="rec"><i></i>REC</span></a>
+      <span class="nav-mid">[ 29.06 // 19:00 МСК // FREE ]</span>
+      <a href="#register" class="btn btn-mag btn-sm js-reg-open">Запись<span class="arr">→</span></a>
+    </div>
+  </nav>
+
+  <div class="marq">
+    <div class="marq-track">
+      <span>БЕЗ КОДА</span><span>29 ИЮНЯ · 19:00</span><span>ОНЛАЙН</span><span>БЕСПЛАТНО</span><span>ВАЙБ-КОДИНГ</span><span>МЕНЬШЕ ВРЕМЕНИ НА ЗАДАЧИ</span>
+      <span>БЕЗ КОДА</span><span>29 ИЮНЯ · 19:00</span><span>ОНЛАЙН</span><span>БЕСПЛАТНО</span><span>ВАЙБ-КОДИНГ</span><span>МЕНЬШЕ ВРЕМЕНИ НА ЗАДАЧИ</span>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <span class="tag hero-tag"><span class="rec"></span>Бесплатный онлайн-вебинар · 29 июня · 19:00 МСК</span>
+      <div class="hero-copy">
+        <h1 class="glitch">Как тратить меньше <span class="neon">времени</span><br>на&nbsp;бытовые и&nbsp;рабочие&nbsp;задачи<br><span class="hollow">с&nbsp;помощью вайб&#8209;кодинга</span></h1>
+        <p class="hero-sub">Покажем, как с помощью вайб-кодинга убирать часть рутины из жизни и работы и тратить меньше времени на то, что раньше делалось вручную.</p>
+      </div>
+      <div class="hero-r">
+        <div class="media-block">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <span class="mlabel tl">// СПИКЕР · КСЕНИЯ БАРАНОВА</span>
+          <span class="mlabel tr"><i></i>LIVE</span>
+          <video class="hero-video" src="assets/hero-video-veo.mp4" poster="assets/hero-veo-poster.png" autoplay loop muted playsinline webkit-playsinline preload="metadata" aria-hidden="true"></video>
+          <img class="hero-photo-fallback" src="assets/hero-veo-poster.png" alt="Ксения Баранова — спикер вебинара" width="720" height="1280" loading="eager" fetchpriority="high" decoding="async">
+          <span class="cap">РЕАЛЬНЫЕ ПРИМЕРЫ — БЕЗ КОДА</span>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <a href="#register" class="hero-gift js-reg-open">
+          <span class="ic">🎁</span>
+          <span>
+            <span class="lbl">Подарок за регистрацию</span>
+            <span class="tt">Доступ к Vibe Tools — платформе, на которой вы сможете самостоятельно создавать полезные инструменты для жизни и работы с помощью вайб-кодинга</span>
+          </span>
+        </a>
+        <div class="hero-acts">
+          <a href="#register" class="btn btn-mag js-reg-open">Принять участие<span class="arr">→</span></a>
+          <a href="#program" class="btn btn-cyan">Программа<span class="arr">→</span></a>
+        </div>
+        <div class="hero-trust">// более 2 000 человек уже создали своё первое приложение</div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><div class="l"><span class="mark">01 //</span><h2>Бывало такое?</h2></div></div>
+      <div class="pain-intro">
+        <p>Вы тратите слишком много времени на мелкие бытовые и рабочие задачи.</p>
+        <p>Нужно что-то найти, сверить, собрать, оформить, напомнить, переслать, упорядочить. И вроде каждая задача небольшая, но вместе они съедают часы, силы и внимание.</p>
+      </div>
+      <p class="pain-grid-lead">Возможно, вам знакомо это:</p>
+      <div class="pain-grid">
+        <div class="pain-card panel"><div class="n">{ 01 }</div><p>простая задача почему-то растягивается на полчаса</p></div>
+        <div class="pain-card panel"><div class="n">{ 02 }</div><p>одно и то же приходится делать вручную снова и снова</p></div>
+        <div class="pain-card panel"><div class="n">{ 03 }</div><p>в телефоне, заметках и чатах копятся мелкие незакрытые дела</p></div>
+        <div class="pain-card panel"><div class="n">{ 04 }</div><p>хочется упростить себе жизнь, но непонятно, с чего начать</p></div>
+        <div class="pain-card panel wide"><div class="n">{ 05 }</div><p>есть ощущение, что часть рутины уже давно можно было бы делегировать ИИ</p></div>
+      </div>
+      <div class="pain-foot">
+        <div class="was">И самое обидное — на это уходит время, которое можно было бы потратить на более важные дела, работу или отдых.</div>
+        <div class="now">На вебинаре вы увидите, как с помощью вайб-кодинга и ИИ можно собирать простые полезные инструменты под свои задачи — даже если раньше вы этим не занимались.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="l"><span class="mark">02 //</span><h2>Приходите, если хотите…</h2></div>
+        <span class="tail">// этот вебинар точно для вас</span>
+      </div>
+      <div class="aud-grid">
+        <div class="aud"><div class="n">[ 01 ]</div><h3>Меньше тратить время на рутину</h3><p>Чтобы мелкие бытовые и рабочие задачи не съедали полдня.</p></div>
+        <div class="aud"><div class="n">[ 02 ]</div><h3>Быстрее решать повседневные вопросы</h3><p>Найти, собрать, оформить, напомнить, переслать — без лишней возни.</p></div>
+        <div class="aud"><div class="n">[ 03 ]</div><h3>Использовать ИИ не только для текстов</h3><p>А для реальных помощников и маленьких инструментов под свои задачи.</p></div>
+        <div class="aud"><div class="n">[ 04 ]</div><h3>Навести порядок в рабочих процессах</h3><p>Чтобы заявки, таблицы, заметки, напоминания и повторяющиеся действия не висели хаосом.</p></div>
+        <div class="aud"><div class="n">[ 05 ]</div><h3>Делать полезное под себя, а не искать готовое</h3><p>Собирать нужные решения самостоятельно на платформе, даже если вы не технарь.</p></div>
+        <div class="aud"><div class="n">[ 06 ]</div><h3>Упростить жизнь себе и близким</h3><p>Не через ещё один сервис, а через понятные инструменты под свои реальные ситуации.</p></div>
+        <div class="aud wide"><div class="n">[ 07 ]</div><h3>Меньше зависеть от подрядчиков</h3><p>Чтобы не ждать каждую мелочь неделями и не платить за каждую простую задачу.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="l"><span class="mark">03 //</span><h2>Что можно создать</h2></div>
+        <span class="tail">// то, что уже создают обычные люди</span>
+      </div>
+      <div class="cre-grid">
+        <div class="cre panel">
+          <div class="meta"><div class="cat">[ 01 ] · Дом</div><h3>Помощник по дому и покупкам</h3><p>Подскажет, что приготовить из того, что есть дома, соберёт список покупок и поможет ничего не забыть.</p></div>
+          <div class="mock">
+            <div class="bar"><span class="d f"></span><span class="d"></span><span class="d"></span><span class="ti">Дом</span></div>
+            <div class="chips"><span class="chip on">яйца</span><span class="chip on">рис</span><span class="chip">курица</span></div>
+            <div class="mrow"><span class="ic">🍳</span><div class="tx"><div class="a">Рис с яйцом</div><div class="b">из того, что есть дома</div></div><span class="tag">25 МИН</span></div>
+            <div class="mrow"><span class="ic">🛒</span><div class="tx"><div class="a">Список покупок</div><div class="b">курица, овощи, молоко</div></div><span class="tag">8 шт</span></div>
+          </div>
+        </div>
+        <div class="cre panel">
+          <div class="meta"><div class="cat">[ 02 ] · Семья</div><h3>Помощник для ребёнка</h3><p>Придумает игры, задания, сказки, идеи для занятий и поможет быстро занять ребёнка без бесконечного поиска в интернете.</p></div>
+          <div class="mock">
+            <div class="bar"><span class="d f"></span><span class="d"></span><span class="d"></span><span class="ti">Семья</span></div>
+            <div class="bub q">Придумай игру на 15 минут</div>
+            <div class="bub a">Поиск сокровищ! Прячем 5 предметов 🗺️</div>
+            <div class="bub q">А сказку на ночь?</div>
+            <div class="bub a">Жила-была улитка, которая мечтала…</div>
+          </div>
+        </div>
+        <div class="cre panel">
+          <div class="meta"><div class="cat">[ 03 ] · Работа</div><h3>Помощник по рабочим задачам</h3><p>Соберёт информацию, напомнит о важном, поможет упорядочить заявки, таблицы, заметки и повторяющиеся процессы.</p></div>
+          <div class="mock">
+            <div class="bar"><span class="d f"></span><span class="d"></span><span class="d"></span><span class="ti">Работа</span></div>
+            <div class="chips"><span class="chip on">заявки</span><span class="chip on">таблицы</span><span class="chip">заметки</span></div>
+            <div class="mrow"><span class="ic">📋</span><div class="tx"><div class="a">Заявка №142</div><div class="b">ожидает ответ</div></div><span class="tag">NEW</span></div>
+            <div class="mrow"><span class="ic">⏰</span><div class="tx"><div class="a">Напоминание</div><div class="b">созвон в 15:00</div></div><span class="tag">СЕГОДНЯ</span></div>
+          </div>
+        </div>
+        <div class="cre panel">
+          <div class="meta"><div class="cat">[ 04 ] · Дела</div><h3>Личный организатор</h3><p>Напоминания, списки, контроль мелких дел, чтобы бытовые и рабочие задачи не висели в голове весь день.</p></div>
+          <div class="mock">
+            <div class="bar"><span class="d f"></span><span class="d"></span><span class="d"></span><span class="ti">Дела</span></div>
+            <div class="day done"><span class="l">Оплатить интернет</span><span class="c">✓</span></div>
+            <div class="day done"><span class="l">Перезвонить клиенту</span><span class="c">✓</span></div>
+            <div class="day"><span class="l">Забрать посылку</span><span class="c"></span></div>
+            <div class="day"><span class="l">Подготовить документы</span><span class="c"></span></div>
+          </div>
+        </div>
+        <div class="cre panel">
+          <div class="meta"><div class="cat">[ 05 ] · Доход</div><h3>Простой дашборд для себя или бизнеса</h3><p>Покажет выручку, заявки, расходы и другие цифры в одном месте — без сложных таблиц и лишней ручной работы.</p></div>
+          <div class="mock">
+            <div class="bar"><span class="d f"></span><span class="d"></span><span class="d"></span><span class="ti">Дашборд</span></div>
+            <div class="chips"><span class="chip on">выручка</span><span class="chip on">заявки</span><span class="chip">расходы</span></div>
+            <div class="mrow"><span class="ic">📈</span><div class="tx"><div class="a">Выручка за месяц</div><div class="b">+18% к прошлому</div></div><span class="tag">₽ 480К</span></div>
+            <div class="mrow"><span class="ic">🧾</span><div class="tx"><div class="a">Новые заявки</div><div class="b">за сегодня</div></div><span class="tag">37</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="host-card">
+        <div class="host-media">
+          <span class="mlabel">// СПИКЕР · КСЕНИЯ БАРАНОВА</span>
+          <img src="assets/host-hero.png" alt="Ксения Баранова — спикер вебинара" width="1024" height="1024" loading="lazy">
+        </div>
+        <div class="host-body">
+          <span class="tag"><span class="rec"></span>Спикер мастер-класса</span>
+          <h2>Ксения Баранова</h2>
+          <div class="host-award">
+            <span class="ic">🏆</span>
+            <div>
+              <div class="t">Премия GETAWARD · 2026</div>
+              <div class="s">Победитель в номинации «Обучение года»</div>
+            </div>
+          </div>
+          <ul class="host-facts">
+            <li><span class="ck">✓</span>Основатель одной из крупнейших школ по нейросетям в СНГ</li>
+            <li><span class="ck">✓</span>Более 400 000 учеников прошли обучающие программы по ИИ</li>
+            <li><span class="ck">✓</span>Приглашённый эксперт по ИИ на заседании в Госдуме РФ</li>
+            <li><span class="ck">✓</span>Член жюри самых престижных премий на рынке онлайн-образования</li>
+          </ul>
+          <p>Эксперт по нейросетям, которая научит вас использовать ИИ в полную силу — и тратить меньше времени на рутину.</p>
+          <div class="host-tags">
+            <span>400 000+ учеников</span>
+            <span>Эксперт в Госдуме РФ</span>
+            <span>Школа №1 в СНГ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="program">
+    <div class="wrap">
+      <div class="prog">
+        <div class="prog-top"><span class="mono">// ПРОГРАММА</span><span class="mono">29.06 — 19:00</span></div>
+        <div class="prow"><span class="n">01</span><p>7 реальных способов использовать вайб-кодинг в жизни, семье, работе и своих идеях</p></div>
+        <div class="prow"><span class="n">02</span><p>Несколько практик в прямом эфире — как идея превращается в работающий результат</p></div>
+        <div class="prow"><span class="n">03</span><p>Проекты учеников и десятки примеров для вдохновения</p></div>
+        <div class="prow"><span class="n">04</span><p>Главный инсайт: то, что раньше требовало программистов и бюджетов, сегодня доступно практически каждому</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="qband">
+    <div class="wrap">
+      <blockquote>«Так вот <em>чего</em> мне не хватало всё это время».</blockquote>
+      <div class="src">// из отзывов участников</div>
+    </div>
+  </section>
+
+  <section class="cta" id="register">
+    <div class="wrap">
+      <div class="cta-inner">
+        <span class="tag"><span class="rec"></span>Регистрация</span>
+        <h2>Займите место на&nbsp;вебинаре <span class="hollow">29&nbsp;июня</span></h2>
+        <p>29 июня в 19:00 (МСК) — покажем, как тратить меньше времени на задачи с помощью вайб-кодинга.</p>
+        <div class="cta-meta">
+          <div class="m"><div class="big">29 ИЮНЯ</div><div class="small">вебинар</div></div>
+          <div class="m"><div class="big">19:00</div><div class="small">МСК</div></div>
+          <div class="m"><div class="big">ONLINE</div><div class="small">бесплатно</div></div>
+        </div>
+        <div class="cta-gift">
+          <span class="ic">🎁</span>
+          <div>
+            <div class="lbl">Подарок за регистрацию</div>
+            <div class="tt">Доступ к Vibe Tools — платформе, на которой вы сможете самостоятельно создавать полезные инструменты для жизни и работы с помощью вайб-кодинга</div>
+          </div>
+        </div>
+        <p class="cta-gifts-note">Пришлём сразу после регистрации — для жизни, семьи и работы</p>
+        <div style="display:flex;justify-content:center;"><a href="#register" class="btn btn-mag js-reg-open">Зарегистрироваться<span class="arr">→</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer-top">
+        <div>
+          <p class="site-footer-brand">Ксения Баранова</p>
+          <p class="site-footer-tag">Школа SMM и нейросетей</p>
+          <p class="site-footer-desc">Бесплатный вебинар: как тратить меньше времени на бытовые и рабочие задачи с помощью вайб-кодинга — без кода и технических знаний.</p>
+        </div>
+        <div>
+          <p class="site-footer-col-title">Занять место на эфире</p>
+          <div class="site-footer-cta">
+            <a href="#register" class="btn btn-mag btn-sm js-reg-open">Записаться · 29 июня · 19:00<span class="arr">→</span></a>
+          </div>
+          <div class="site-footer-links">
+            <a href="https://xeniabaranova-school.ru/politica" target="_blank" rel="noopener noreferrer">Политика обработки данных</a>
+            <a href="https://xeniabaranova-school.ru/oferta_vibe-code" target="_blank" rel="noopener noreferrer">Публичная оферта</a>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer-bottom">вайб·вебинар // 29 июня // онлайн // участие бесплатное</div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar"><a href="#register" class="btn btn-mag js-reg-open">Записаться бесплатно<span class="arr">→</span></a></div>
+
+  <div class="reg-popup" id="reg-popup" aria-hidden="true">
+    <button type="button" class="reg-popup-backdrop" data-reg-close aria-label="Закрыть"></button>
+    <div class="reg-popup-panel" role="dialog" aria-modal="true" aria-labelledby="reg-popup-title">
+      <button type="button" class="reg-popup-close" data-reg-close aria-label="Закрыть">&times;</button>
+      <p id="reg-popup-title" class="sr-only">Регистрация на вебинар</p>
+      <div class="reg-popup-widget" id="reg-widget-host">
+        <div class="reg-popup-loader" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scan"></div>
+
+  <script>
+    var REG_WIDGET = {
+      scriptId: '1d51f4a68491fe69ee746c99c7f14d37944baa97',
+      src: 'https://xeniabaranova-school.ru/pl/lite/widget/script?id=1619826'
+    };
+
+    function bootHeroVideo() {
+      var video = document.querySelector('.hero-video');
+      if (!video) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.removeAttribute('autoplay');
+        return;
+      }
+
+      var started = false;
+      var gestureBound = false;
+      var blobUrl = null;
+
+      function prepVideo() {
+        video.muted = true;
+        video.defaultMuted = true;
+        video.setAttribute('muted', '');
+        video.playsInline = true;
+        video.setAttribute('playsinline', '');
+        video.setAttribute('webkit-playsinline', '');
+      }
+
+      function tryPlay() {
+        prepVideo();
+        var playPromise = video.play();
+        if (playPromise && playPromise.catch) {
+          playPromise.catch(function () { bindGestureRetry(); });
+        }
+      }
+
+      function showVideo() {
+        video.classList.add('is-ready');
+        tryPlay();
+      }
+
+      function bindGestureRetry() {
+        if (gestureBound) return;
+        gestureBound = true;
+        function retry() { tryPlay(); }
+        document.addEventListener('touchstart', retry, { once: true, capture: true, passive: true });
+        document.addEventListener('click', retry, { once: true, capture: true });
+      }
+
+      function isTelegramIOS() {
+        return /Telegram/i.test(navigator.userAgent) && /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      function beginLoad() {
+        if (started) return;
+        started = true;
+        prepVideo();
+
+        function onReady() { showVideo(); }
+
+        video.addEventListener('canplay', onReady, { once: true });
+        video.addEventListener('loadeddata', onReady, { once: true });
+        video.addEventListener('error', function () {
+          if (blobUrl) return;
+          loadHeroVideoBlob();
+        }, { once: true });
+
+        if (video.readyState >= 2) { onReady(); return; }
+        if (isTelegramIOS()) { loadHeroVideoBlob(); return; }
+        try { video.load(); } catch (e) {}
+      }
+
+      function loadHeroVideoBlob() {
+        var src = video.getAttribute('src');
+        if (!src || !window.fetch) return;
+        fetch(src)
+          .then(function (res) { if (!res.ok) throw new Error('fetch failed'); return res.blob(); })
+          .then(function (blob) {
+            blobUrl = URL.createObjectURL(blob);
+            video.src = blobUrl;
+            video.load();
+          })
+          .catch(function () {});
+      }
+
+      beginLoad();
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden && video.classList.contains('is-ready') && video.paused) tryPlay();
+      });
+    }
+
+    function syncUtmToUrl() {
+      if (!window.__utmParams) return;
+      var params = window.__utmParams();
+      if (!params.toString()) return;
+      try {
+        var url = new URL(location.href);
+        params.forEach(function (v, k) { if (!url.searchParams.has(k)) url.searchParams.set(k, v); });
+        history.replaceState(null, '', url.toString());
+      } catch (e) {}
+    }
+
+    var regWidgetBooted = false;
+    var regWidgetPreloading = false;
+    var regScrollY = 0;
+    var regViewportTimer = null;
+    var regTouchBlocker = null;
+
+    function getRegWidgetHost() { return document.getElementById('reg-widget-host'); }
+    function markRegWidgetReady() { var host = getRegWidgetHost(); if (host) host.classList.add('is-ready'); }
+
+    function lockPageScroll() {
+      regScrollY = window.scrollY || window.pageYOffset || 0;
+      var scrollbar = window.innerWidth - document.documentElement.clientWidth;
+      var pad = scrollbar > 0 ? scrollbar + 'px' : '';
+      document.body.style.paddingRight = pad;
+      var nav = document.querySelector('.nav');
+      var bar = document.querySelector('.mobile-bar');
+      if (nav) nav.style.paddingRight = pad;
+      if (bar) bar.style.paddingRight = pad;
+      document.documentElement.classList.add('reg-popup-open');
+      document.body.classList.add('reg-popup-open');
+      regTouchBlocker = function (ev) {
+        var panel = document.querySelector('.reg-popup-panel');
+        if (panel && panel.contains(ev.target)) return;
+        ev.preventDefault();
+      };
+      document.addEventListener('touchmove', regTouchBlocker, { passive: false });
+    }
+
+    function unlockPageScroll() {
+      document.documentElement.classList.remove('reg-popup-open');
+      document.body.classList.remove('reg-popup-open');
+      document.body.style.paddingRight = '';
+      var nav = document.querySelector('.nav');
+      var bar = document.querySelector('.mobile-bar');
+      if (nav) nav.style.paddingRight = '';
+      if (bar) bar.style.paddingRight = '';
+      if (regTouchBlocker) {
+        document.removeEventListener('touchmove', regTouchBlocker);
+        regTouchBlocker = null;
+      }
+      window.scrollTo(0, regScrollY);
+    }
+
+    function fitRegPopupViewport() {
+      var popup = document.getElementById('reg-popup');
+      if (!popup || !popup.classList.contains('is-open')) return;
+      if (window.innerWidth > 760 || !window.visualViewport) {
+        popup.style.height = '';
+        popup.style.top = '';
+        return;
+      }
+      popup.style.height = window.visualViewport.height + 'px';
+      popup.style.top = window.visualViewport.offsetTop + 'px';
+    }
+
+    function scheduleRegViewportFit() {
+      if (regViewportTimer) window.clearTimeout(regViewportTimer);
+      regViewportTimer = window.setTimeout(function () { regViewportTimer = null; fitRegPopupViewport(); }, 80);
+    }
+
+    function resetRegPopupViewport() {
+      var popup = document.getElementById('reg-popup');
+      if (!popup) return;
+      popup.style.height = '';
+      popup.style.top = '';
+    }
+
+    function bootRegWidget() {
+      var host = getRegWidgetHost();
+      if (!host) return;
+      if (host.querySelector('iframe')) { regWidgetBooted = true; markRegWidgetReady(); return; }
+      var startName = 'startWidget' + REG_WIDGET.scriptId;
+      var startFn = window[startName];
+      if (typeof startFn === 'function') { startFn(); regWidgetBooted = true; return; }
+      try { document.dispatchEvent(new Event('StartWidget' + REG_WIDGET.scriptId)); regWidgetBooted = true; } catch (e) {}
+    }
+
+    function ensureRegWidget() {
+      syncUtmToUrl();
+      var host = getRegWidgetHost();
+      if (!host || host.querySelector('iframe')) { markRegWidgetReady(); return; }
+      var script = document.getElementById(REG_WIDGET.scriptId);
+      if (!script) {
+        script = document.createElement('script');
+        script.id = REG_WIDGET.scriptId;
+        script.src = REG_WIDGET.src + '&rand=' + Date.now();
+        script.onload = bootRegWidget;
+        host.appendChild(script);
+        return;
+      }
+      bootRegWidget();
+      if (!host.querySelector('iframe')) script.addEventListener('load', bootRegWidget, { once: true });
+    }
+
+    function preloadRegWidget() {
+      if (regWidgetPreloading || regWidgetBooted) return;
+      regWidgetPreloading = true;
+      ensureRegWidget();
+    }
+
+    function openRegPopup() {
+      var popup = document.getElementById('reg-popup');
+      if (!popup || popup.classList.contains('is-open')) return;
+      lockPageScroll();
+      popup.classList.add('is-open');
+      popup.setAttribute('aria-hidden', 'false');
+      fitRegPopupViewport();
+      ensureRegWidget();
+      requestAnimationFrame(function () {
+        var closeBtn = popup.querySelector('.reg-popup-close');
+        if (closeBtn) closeBtn.focus({ preventScroll: true });
+      });
+    }
+
+    function closeRegPopup() {
+      var popup = document.getElementById('reg-popup');
+      if (!popup || !popup.classList.contains('is-open')) return;
+      popup.classList.remove('is-open');
+      popup.setAttribute('aria-hidden', 'true');
+      resetRegPopupViewport();
+      unlockPageScroll();
+    }
+
+    function initRegWidgetMessages() {
+      window.addEventListener('message', function (e) {
+        if (!e.data || e.data.uniqName !== REG_WIDGET.scriptId || !e.data.height) return;
+        if (e.data.height > 80) markRegWidgetReady();
+      });
+    }
+
+    function initRegPopup() {
+      initRegWidgetMessages();
+      document.querySelectorAll('.js-reg-open, a[href="#register"]').forEach(function (a) {
+        a.classList.add('js-reg-open');
+        a.addEventListener('click', function (e) { e.preventDefault(); openRegPopup(); });
+      });
+      document.querySelectorAll('[data-reg-close]').forEach(function (el) {
+        el.addEventListener('click', closeRegPopup);
+      });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeRegPopup(); });
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', scheduleRegViewportFit);
+        window.visualViewport.addEventListener('scroll', scheduleRegViewportFit);
+      }
+      window.addEventListener('resize', scheduleRegViewportFit);
+      if ('requestIdleCallback' in window) requestIdleCallback(preloadRegWidget, { timeout: 2500 });
+      else window.setTimeout(preloadRegWidget, 1800);
+    }
+
+    function initPage() {
+      initRegPopup();
+      bootHeroVideo();
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initPage);
+    else initPage();
+  </script>
+</body>
+</html>
