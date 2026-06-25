@@ -278,7 +278,7 @@
     .pain-card:hover{ transform:translateY(-4px); box-shadow:var(--glow-c); border-color:var(--cyan); }
     .pain-card.wide{ grid-column:1 / -1; }
     .pain-card .n{ font-family:'Space Mono',monospace; font-size:12px; font-weight:700; color:var(--cyan); margin-bottom:14px; }
-    .pain-card p{ font-family:'Unbounded',sans-serif; font-size:1.1rem; color:var(--ink); line-height:1.32; font-weight:500; }
+    .pain-card p{ font-family:'Unbounded',sans-serif; font-size:clamp(.95rem,2vw,1.05rem); color:var(--ink); line-height:1.42; font-weight:500; }
     .pain-foot{ margin-top:32px; display:grid; grid-template-columns:1fr 1fr; }
     @media(max-width:620px){ .pain-foot{ grid-template-columns:1fr; } }
     .pain-foot .was{ padding:26px 30px; color:var(--muted); border:1px solid var(--line); }
@@ -507,11 +507,12 @@
       </div>
       <p class="pain-grid-lead reveal">Возможно, вам знакомо это:</p>
       <div class="pain-grid reveal reveal-stagger">
-        <div class="pain-card panel"><div class="n">{ 01 }</div><p>простая задача почему-то растягивается на полчаса</p></div>
-        <div class="pain-card panel"><div class="n">{ 02 }</div><p>одно и то же приходится делать вручную снова и снова</p></div>
-        <div class="pain-card panel"><div class="n">{ 03 }</div><p>в телефоне, заметках и чатах копятся мелкие незакрытые дела</p></div>
-        <div class="pain-card panel"><div class="n">{ 04 }</div><p>хочется упростить себе жизнь, но непонятно, с чего начать</p></div>
-        <div class="pain-card panel wide"><div class="n">{ 05 }</div><p>есть ощущение, что часть рутины уже давно можно было бы делегировать ИИ</p></div>
+        <div class="pain-card panel"><div class="n">{ 01 }</div><p>у вас есть чек-лист, который люди скачивают и забывают</p></div>
+        <div class="pain-card panel"><div class="n">{ 02 }</div><p>есть таблица, в которой вы всё держите, но ею неудобно пользоваться</p></div>
+        <div class="pain-card panel"><div class="n">{ 03 }</div><p>есть методика, которую каждый раз объясняете голосом или в переписке</p></div>
+        <div class="pain-card panel"><div class="n">{ 04 }</div><p>есть идея сервиса, но не хочется сразу платить разработчику</p></div>
+        <div class="pain-card panel"><div class="n">{ 05 }</div><p>есть продукт или услуга, которую сложно объяснить словами — и хочется дать ссылку и сказать: «Открой, попробуй»</p></div>
+        <div class="pain-card panel wide"><div class="n">{ 06 }</div><p>есть повторяющаяся задача, которую вы уже 10 раз просили сделать ИИ — и теперь хотите превратить её в кнопку</p></div>
       </div>
       <div class="pain-foot reveal">
         <div class="was">И самое обидное — на это уходит время, которое можно было бы потратить на более важные дела, работу или отдых.</div>
