@@ -34,6 +34,8 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/109961574" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/space-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/fonts-v6.css">
   <link rel="preload" as="image" href="assets/hero-veo-poster.png" fetchpriority="high">
@@ -75,6 +77,7 @@
       };
     })();
   </script>
+  <noscript><style>body{opacity:1!important}</style></noscript>
   <style>
     *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
     :root{
@@ -96,7 +99,10 @@
       --glow-m:0 0 10px rgba(255,46,166,.6), 0 0 24px rgba(255,46,166,.3);
       --max:1180px;
     }
-    html{ scroll-behavior:smooth; overflow-x:hidden; }
+    html{ scroll-behavior:smooth; overflow-x:hidden; background:var(--bg); }
+    html:not(.is-loaded) body{ opacity:0; }
+    html.is-loaded body{ opacity:1; transition:opacity .6s cubic-bezier(.22,.61,.36,1); }
+    @media(prefers-reduced-motion:reduce){ html:not(.is-loaded) body{ opacity:1; } html.is-loaded body{ transition:none; } }
     @media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *,*::before,*::after{animation:none!important;transition:none!important} }
     body{ font-family:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif; font-size:17px; line-height:1.6; color:var(--ink-soft); background:var(--bg); -webkit-font-smoothing:antialiased; overflow-x:hidden; position:relative; }
     .wrap{ width:min(var(--max),100% - 40px); margin-inline:auto; position:relative; z-index:2; }
@@ -114,6 +120,36 @@
       background-image:linear-gradient(rgba(34,230,255,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(34,230,255,.16) 1px, transparent 1px);
       background-size:46px 46px; transform:perspective(420px) rotateX(62deg); transform-origin:bottom; mask-image:linear-gradient(transparent, #000 70%); -webkit-mask-image:linear-gradient(transparent, #000 70%); }
     .scan{ position:fixed; inset:0; z-index:60; pointer-events:none; background:repeating-linear-gradient(0deg, rgba(0,0,0,.16) 0 1px, transparent 1px 3px); mix-blend-mode:multiply; opacity:.5; }
+
+    /* load + scroll reveal */
+    html:not(.is-loaded) .nav, html:not(.is-loaded) .marq, html:not(.is-loaded) .hero-grid > *{
+      opacity:0; transform:translateY(14px);
+    }
+    html.is-loaded .nav, html.is-loaded .marq, html.is-loaded .hero-grid > *{
+      opacity:1; transform:none;
+      transition:opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1);
+    }
+    html.is-loaded .nav{ transition-delay:.04s; }
+    html.is-loaded .marq{ transition-delay:.08s; }
+    html.is-loaded .hero-grid > *:nth-child(1){ transition-delay:.12s; }
+    html.is-loaded .hero-grid > *:nth-child(2){ transition-delay:.2s; }
+    html.is-loaded .hero-grid > *:nth-child(3){ transition-delay:.28s; }
+    html.is-loaded .hero-grid > *:nth-child(4){ transition-delay:.36s; }
+    .reveal{ opacity:0; transform:translateY(20px); transition:opacity .65s cubic-bezier(.22,.61,.36,1), transform .65s cubic-bezier(.22,.61,.36,1); }
+    .reveal.in{ opacity:1; transform:none; }
+    .reveal-stagger > *{ opacity:0; transform:translateY(16px); transition:opacity .6s cubic-bezier(.22,.61,.36,1), transform .6s cubic-bezier(.22,.61,.36,1); }
+    .reveal-stagger.in > *{ opacity:1; transform:none; }
+    .reveal-stagger.in > *:nth-child(1){ transition-delay:.04s; }
+    .reveal-stagger.in > *:nth-child(2){ transition-delay:.1s; }
+    .reveal-stagger.in > *:nth-child(3){ transition-delay:.16s; }
+    .reveal-stagger.in > *:nth-child(4){ transition-delay:.22s; }
+    .reveal-stagger.in > *:nth-child(5){ transition-delay:.28s; }
+    .reveal-stagger.in > *:nth-child(6){ transition-delay:.34s; }
+    .reveal-stagger.in > *:nth-child(7){ transition-delay:.4s; }
+    @media(prefers-reduced-motion:reduce){
+      html:not(.is-loaded) .nav, html:not(.is-loaded) .marq, html:not(.is-loaded) .hero-grid > *,
+      .reveal, .reveal-stagger > *{ opacity:1!important; transform:none!important; }
+    }
 
     /* labels */
     .tag{ font-family:'Space Mono',monospace; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--cyan); display:inline-flex; align-items:center; gap:8px; text-shadow:var(--glow-c); }
@@ -481,34 +517,34 @@
 
   <section>
     <div class="wrap">
-      <div class="sec-head"><div class="l"><span class="mark">01 //</span><h2>Бывало такое?</h2></div></div>
-      <div class="pain-intro">
+      <div class="sec-head reveal"><div class="l"><span class="mark">01 //</span><h2>Бывало такое?</h2></div></div>
+      <div class="pain-intro reveal">
         <p>Вы тратите слишком много времени на мелкие бытовые и рабочие задачи.</p>
         <p>Нужно что-то найти, сверить, собрать, оформить, напомнить, переслать, упорядочить. И вроде каждая задача небольшая, но вместе они съедают часы, силы и внимание.</p>
       </div>
-      <p class="pain-grid-lead">Возможно, вам знакомо это:</p>
-      <div class="pain-grid">
+      <p class="pain-grid-lead reveal">Возможно, вам знакомо это:</p>
+      <div class="pain-grid reveal reveal-stagger">
         <div class="pain-card panel"><div class="n">{ 01 }</div><p>простая задача почему-то растягивается на полчаса</p></div>
         <div class="pain-card panel"><div class="n">{ 02 }</div><p>одно и то же приходится делать вручную снова и снова</p></div>
         <div class="pain-card panel"><div class="n">{ 03 }</div><p>в телефоне, заметках и чатах копятся мелкие незакрытые дела</p></div>
         <div class="pain-card panel"><div class="n">{ 04 }</div><p>хочется упростить себе жизнь, но непонятно, с чего начать</p></div>
         <div class="pain-card panel wide"><div class="n">{ 05 }</div><p>есть ощущение, что часть рутины уже давно можно было бы делегировать ИИ</p></div>
       </div>
-      <div class="pain-foot">
+      <div class="pain-foot reveal">
         <div class="was">И самое обидное — на это уходит время, которое можно было бы потратить на более важные дела, работу или отдых.</div>
         <div class="now">На вебинаре вы увидите, как с помощью вайб-кодинга и ИИ можно собирать простые полезные инструменты под свои задачи — даже если раньше вы этим не занимались.</div>
       </div>
-      <div class="sec-cta"><a href="#register" class="btn btn-mag js-reg-open">Занять место на вебинаре<span class="arr">→</span></a></div>
+      <div class="sec-cta reveal"><a href="#register" class="btn btn-mag js-reg-open">Занять место на вебинаре<span class="arr">→</span></a></div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head reveal">
         <div class="l"><span class="mark">02 //</span><h2>Приходите, если хотите…</h2></div>
         <span class="tail">// этот вебинар точно для вас</span>
       </div>
-      <div class="aud-grid">
+      <div class="aud-grid reveal reveal-stagger">
         <div class="aud"><div class="n">[ 01 ]</div><h3>Меньше тратить время на рутину</h3><p>Чтобы мелкие бытовые и рабочие задачи не съедали полдня.</p></div>
         <div class="aud"><div class="n">[ 02 ]</div><h3>Быстрее решать повседневные вопросы</h3><p>Найти, собрать, оформить, напомнить, переслать — без лишней возни.</p></div>
         <div class="aud"><div class="n">[ 03 ]</div><h3>Использовать ИИ не только для текстов</h3><p>А для реальных помощников и маленьких инструментов под свои задачи.</p></div>
@@ -517,17 +553,17 @@
         <div class="aud"><div class="n">[ 06 ]</div><h3>Упростить жизнь себе и близким</h3><p>Не через ещё один сервис, а через понятные инструменты под свои реальные ситуации.</p></div>
         <div class="aud wide"><div class="n">[ 07 ]</div><h3>Меньше зависеть от подрядчиков</h3><p>Чтобы не ждать каждую мелочь неделями и не платить за каждую простую задачу.</p></div>
       </div>
-      <div class="sec-cta"><a href="#register" class="btn btn-mag js-reg-open">Записаться бесплатно<span class="arr">→</span></a></div>
+      <div class="sec-cta reveal"><a href="#register" class="btn btn-mag js-reg-open">Записаться бесплатно<span class="arr">→</span></a></div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head reveal">
         <div class="l"><span class="mark">03 //</span><h2>Что можно создать</h2></div>
         <span class="tail">// то, что уже создают обычные люди</span>
       </div>
-      <div class="cre-grid">
+      <div class="cre-grid reveal reveal-stagger">
         <div class="cre panel">
           <div class="meta"><div class="cat">[ 01 ] · Дом</div><h3>Помощник по дому и покупкам</h3><p>Подскажет, что приготовить из того, что есть дома, соберёт список покупок и поможет ничего не забыть.</p></div>
           <div class="mock">
@@ -576,13 +612,13 @@
           </div>
         </div>
       </div>
-      <div class="sec-cta"><a href="#register" class="btn btn-mag js-reg-open">Показать, как это собрать<span class="arr">→</span></a></div>
+      <div class="sec-cta reveal"><a href="#register" class="btn btn-mag js-reg-open">Показать, как это собрать<span class="arr">→</span></a></div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="host-card">
+      <div class="host-card reveal">
         <div class="host-media">
           <span class="mlabel">// СПИКЕР · КСЕНИЯ БАРАНОВА</span>
           <img src="assets/host-hero.png" alt="Ксения Баранова — спикер вебинара" width="1024" height="1024" loading="lazy">
@@ -617,28 +653,28 @@
 
   <section id="program">
     <div class="wrap">
-      <div class="prog">
+      <div class="prog reveal">
         <div class="prog-top"><span class="mono">// ПРОГРАММА</span><span class="mono">29.06 — 19:00</span></div>
         <div class="prow"><span class="n">01</span><p>7 реальных способов использовать вайб-кодинг в жизни, семье, работе и своих идеях</p></div>
         <div class="prow"><span class="n">02</span><p>Несколько практик в прямом эфире — как идея превращается в работающий результат</p></div>
         <div class="prow"><span class="n">03</span><p>Проекты учеников и десятки примеров для вдохновения</p></div>
         <div class="prow"><span class="n">04</span><p>Главный инсайт: то, что раньше требовало программистов и бюджетов, сегодня доступно практически каждому</p></div>
       </div>
-      <div class="sec-cta"><a href="#register" class="btn btn-mag js-reg-open">Зарегистрироваться · 29 июня<span class="arr">→</span></a></div>
+      <div class="sec-cta reveal"><a href="#register" class="btn btn-mag js-reg-open">Зарегистрироваться · 29 июня<span class="arr">→</span></a></div>
     </div>
   </section>
 
   <section class="qband">
     <div class="wrap">
-      <blockquote>«Так вот <em>чего</em> мне не хватало всё это время».</blockquote>
-      <div class="src">// из отзывов участников</div>
-      <div class="sec-cta"><a href="#register" class="btn btn-mag js-reg-open">Принять участие<span class="arr">→</span></a></div>
+      <blockquote class="reveal">«Так вот <em>чего</em> мне не хватало всё это время».</blockquote>
+      <div class="src reveal">// из отзывов участников</div>
+      <div class="sec-cta reveal"><a href="#register" class="btn btn-mag js-reg-open">Принять участие<span class="arr">→</span></a></div>
     </div>
   </section>
 
   <section class="cta" id="register">
     <div class="wrap">
-      <div class="cta-inner">
+      <div class="cta-inner reveal">
         <span class="tag"><span class="rec"></span>Регистрация</span>
         <h2>Займите место на&nbsp;вебинаре <span class="hollow">29&nbsp;июня</span></h2>
         <p>29 июня в 19:00 (МСК) — покажем, как тратить меньше времени на задачи с помощью вайб-кодинга.</p>
@@ -951,6 +987,50 @@
     function initPage() {
       initRegPopup();
       bootHeroVideo();
+      initLoadAnimation();
+      initScrollReveal();
+    }
+
+    function initLoadAnimation() {
+      var root = document.documentElement;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) {
+        root.classList.add('is-loaded');
+        return;
+      }
+      var done = false;
+      function finish() {
+        if (done) return;
+        done = true;
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () { root.classList.add('is-loaded'); });
+        });
+      }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(finish).catch(finish);
+      } else {
+        finish();
+      }
+      window.setTimeout(finish, 900);
+    }
+
+    function initScrollReveal() {
+      var items = document.querySelectorAll('.reveal');
+      if (!items.length) return;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      items.forEach(function (el) { io.observe(el); });
     }
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initPage);
