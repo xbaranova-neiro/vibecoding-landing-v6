@@ -1,0 +1,5 @@
+:8080 {
+	root * .
+	file_server
+	header /assets/* Cache-Control "public, max-age=31536000, immutable"
+}

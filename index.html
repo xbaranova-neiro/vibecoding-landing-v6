@@ -19,7 +19,8 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/109961574" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/fonts-v6.css">
+  <link rel="preload" href="assets/fonts-v6.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/fonts-v6.css"></noscript>
   <link rel="preload" as="image" href="assets/hero-veo-poster.jpg" fetchpriority="high">
   <script>
     (function () {
@@ -480,7 +481,7 @@
           <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
           <span class="mlabel tl">// СПИКЕР · КСЕНИЯ БАРАНОВА</span>
           <span class="mlabel tr"><i></i>LIVE</span>
-          <video class="hero-video" data-src="assets/hero-video-veo-lite.mp4" data-fallback-src="assets/hero-video-veo.mp4" poster="assets/hero-veo-poster.jpg" autoplay loop muted playsinline webkit-playsinline preload="none" aria-hidden="true"></video>
+          <video class="hero-video" data-src="assets/hero-video-veo-lite.mp4" poster="assets/hero-veo-poster.jpg" autoplay loop muted playsinline webkit-playsinline preload="none" aria-hidden="true"></video>
           <img class="hero-photo-fallback" src="assets/hero-veo-poster.jpg" alt="Ксения Баранова — спикер вебинара" width="720" height="1280" loading="eager" fetchpriority="high" decoding="async">
           <span class="cap">РЕАЛЬНЫЕ ПРИМЕРЫ — БЕЗ КОДА</span>
         </div>
@@ -740,9 +741,7 @@
       var gestureBound = false;
       var blobUrl = null;
       var videoSrc = video.getAttribute('data-src');
-      var fallbackSrc = video.getAttribute('data-fallback-src');
       if (!videoSrc) return;
-      var triedFallback = false;
 
       function prepVideo() {
         video.muted = true;
@@ -790,14 +789,6 @@
         video.addEventListener('loadeddata', onReady, { once: true });
         video.addEventListener('error', function onVideoError() {
           if (blobUrl) return;
-          if (!triedFallback && fallbackSrc && videoSrc !== fallbackSrc) {
-            triedFallback = true;
-            started = false;
-            videoSrc = fallbackSrc;
-            video.removeEventListener('error', onVideoError);
-            beginLoad();
-            return;
-          }
           video.removeEventListener('error', onVideoError);
           loadHeroVideoBlob();
         });
